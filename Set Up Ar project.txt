@@ -1,0 +1,25 @@
+1. them vao gradle app
+	android {
+		compileOptions {
+			sourceCompatibility 1.8
+			targetCompatibility 1.8
+		}
+	}
+
+dependencies {
+    …
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.12.0'
+	implementation 'com.google.ar:core:1.12.0'
+}
+	
+	
+	
+2. AndroidManifest.xml
+
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-feature android:name="android.hardware.camera.ar" android:required="true" />
+<application>
+    …
+    <meta-data android:name="com.google.ar.core" android:value="required" />
+</application>
+

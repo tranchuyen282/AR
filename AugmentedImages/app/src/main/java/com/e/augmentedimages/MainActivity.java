@@ -47,12 +47,12 @@ public class MainActivity extends AppCompatActivity implements Scene.OnUpdateLis
 
         for (AugmentedImage image: images){
             if(image.getTrackingState() == TrackingState.TRACKING){
-                if (image.getName().equals("fox")){
+                //if (image.getName().equals("fox")){
 
                     Anchor anchor = image.createAnchor(image.getCenterPose());
 
                     creatModel(anchor);
-                }
+                //}
             }
         }
     }
